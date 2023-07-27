@@ -1,0 +1,22 @@
+---
+import '../../../global.css'
+import Docs2 from '../../../components/spriki-components/Docs2.astro'
+import Navspriki from '../../../components/spriki-components/Navspriki.astro'
+---
+<html lang="en">
+    <head>
+        <title>Runbooks - Sprikipedia, the Sprig encyclopedia</title>
+    </head>
+    <body>
+        <Navspriki />
+        <div class="intro-spriki">
+            <h1>Runbooks</h1>
+            <br>
+            <p>Runbook is a set of procedures to define and maintain a working pattern.</p>
+        </div>
+        <div class="docs-preview">
+            <Docs2 name="Review" description="How we review PR games" links="runbook" links2="review" />
+            <Docs2 name="Triage" description="How we triage PRs" links="runbook" links2="triage" />
+        </div>
+    </body>
+</html>
