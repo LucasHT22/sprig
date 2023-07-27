@@ -1,0 +1,24 @@
+---
+import '../../../global.css'
+import Docs2 from '../../../components/spriki-components/Docs2.astro'
+import Dev from '../../../components/spriki-components/Dev.astro'
+import Navspriki from '../../../components/spriki-components/Navspriki.astro'
+---
+<html lang="en">
+    <head>
+        <title>Hardware - Sprikipedia, the Sprig encyclopedia</title>
+    </head>
+    <body>
+        <Navspriki />
+        <div class="intro-spriki">
+            <h1>Hardware</h1>
+            <br>
+            <p></p>
+            <Dev />
+        </div>
+        <div class="docs-preview">
+            <Docs2 name="Components" description="List and details about the components used in Sprig Console" links="hardware" links2="components" />
+            <Docs2 name="Downloads" description="All files related Sprig Console" links="hardware" links2="downloads" />
+        </div>
+    </body>
+</html>
