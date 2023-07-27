@@ -1,0 +1,27 @@
+---
+import '../../../global.css'
+import Docs2 from '../../../components/spriki-components/Docs2.astro'
+import Dev from '../../../components/spriki-components/Dev.astro'
+import Navspriki from '../../../components/spriki-components/Navspriki.astro'
+---
+<html lang="en">
+    <head>
+        <title>Firmware - Sprikipedia, the Sprig encyclopedia</title>
+    </head>
+    <body>
+        <Navspriki />
+        <div class="intro-spriki">
+            <h1>Firmware</h1>
+            <br>
+            <p></p>
+            <Dev />
+        </div>
+        <div class="docs-preview">
+            <Docs2 name="Spade" description="Official firmware" links="firmware" links2="spade" />
+            <Docs2 name="Trowel" description="Rust version" links="firmware" links2="trowel" />
+            <Docs2 name="Spryg" description="Python version" links="firmware" links2="spryg" />
+            <Docs2 name="CircuitPython" description="CircuitPython version" links="firmware" links2="CircuitPython" />
+            <Docs2 name="hp-trolling" description="Hacking tool vs HP-based printers" links="firmware" links2="hp-trolling" />
+        </div>
+    </body>
+</html>
