@@ -1,6 +1,7 @@
 ---
 import '../../../global.css'
 import Categories from '../../../layouts/categories.astro'
+import Download from '../../../components/spriki-components/Download.astro'
 
 const data = (
   (await Astro.glob(`/src/translations/*.json`)).find(
@@ -13,13 +14,20 @@ const data = (
     <p>If you're a club leader, hackathon organizer, or community member, you're authorized to print, distribute or translate these for Hack Club-related purposes. You're also welcome to use them personally, or give to friends! This Brand material is copyright Hack Club.</p>
     
     <h3>Brand material</h3>
+    <div class="docs-preview">
+       <Download 
+            name="Gord (Sprig dino)" 
+            links="https://sprig.hackclub.com/SPRIGDINO.png" 
+            download="gord" /> 
+    </div>
+    
     <table>
         <tr class="stline">
             <td>Preview</td>
             <td>Download</td>
         </tr>
         <tr>
-            <td>Gord (Sprig dino)</td>
+            <td></td>
             <td><a href="../../../../public/SPRIGDINO.png" download="gord">Download</a></td>
         </tr>
         <tr>
@@ -44,7 +52,7 @@ const data = (
         </tr>
         <tr>
             <td>SVG old gallery bg</td>
-            <td><a href="../../../../public/pcb.svg" download="pcb">Download</a></td>
+            <td><a href="../../../../public/pcb.svg" download="pcb">Download</a></td> 
         </tr>
         <tr>
             <td>Sprig image 1</td>

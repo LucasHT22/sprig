@@ -1,0 +1,25 @@
+---
+const { name, links, download } = Astro.props
+---
+<style>
+    .card {
+        background-color: #078969;
+        padding: 10px;
+        margin: 20px;
+        width: 150px;
+        height: 180px;
+        top: 5rem;
+        left: 50px;
+        color: #ffffff;
+        border-radius: 10px;
+    }
+    .card:hover {
+        color: #8BCAB1;
+    }
+</style>
+
+<a href={links} class="card" download={download}>
+    <div>
+        <h2>{name}</h2>
+    </div>
+</a>
